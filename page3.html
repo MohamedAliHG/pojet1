@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="generalstyle.css"> 
+
+</head>
+<body>
+    <div class="container text-center" >
+
+        <div class="row">
+        
+          <div class="col-6" id="div1">
+            <ul id="liste"></ul>
+          </div>
+
+          <div class="col-6" id="div2">
+            <form style="margin-top: 30%;">
+                <div class="row mb-3">
+                  <label for="name" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="content" class="col-sm-2 col-form-label">Content</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="content">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Todo</button>
+              </form>
+          </div>
+    
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation example" class="pagination" >
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="page2.html">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="page1.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="page3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="page4.html">4</a></li>
+          <li class="page-item"><a class="page-link" href="page4.html">Next</a></li>
+        </ul>
+      </nav>
+    
+
+      <script src="js3.js"></script>
+</body>
+</html>
