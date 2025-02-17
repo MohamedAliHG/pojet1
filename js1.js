@@ -40,7 +40,7 @@ function getGameLevel(){
     do{
         game_level=prompt("enter game level: e (easy) i (intermediate) h (hard)");
 
-    }while(game_level.toLowerCase()!='e' && game_level.toLowerCase()!='i' && game_level.toLowerCase()!='h');
+    }while(!game_level && game_level.toLowerCase()!='e' && game_level.toLowerCase()!='i' && game_level.toLowerCase()!='h');
 
     return game_level.toLowerCase();
 }
