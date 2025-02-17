@@ -8,10 +8,11 @@ function startTheGame(min,max,nb)
 {
     let randomValue=getRandomValue(min,max);
     let won=false;
+    let k=nb;
     for(let i=0;i<nb;i++)
         {
             
-            let userChoice=prompt("guess the number");
+            let userChoice=prompt(`try to guess the number between ${min} and ${max}. you have ${k} attempts`);
             if(randomValue==userChoice)
             {
                 alert(`correct!`);
@@ -20,6 +21,7 @@ function startTheGame(min,max,nb)
             }
             else{
                 alert(`Wrong :(`);
+                k--;
             }
     
         }
